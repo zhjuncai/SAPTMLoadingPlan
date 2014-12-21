@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0CBD6C0-29ED-473C-BA90-83BAD3CFE889</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PulsingHaloDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>08C5ABB1976CDD41ABEF3F919A75ACDFC44FC7C1</key>
+		<string>https://github.com/zhjuncai/SAPTMLoadingPlan.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PulsingHaloDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>08C5ABB1976CDD41ABEF3F919A75ACDFC44FC7C1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhjuncai/SAPTMLoadingPlan.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>08C5ABB1976CDD41ABEF3F919A75ACDFC44FC7C1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>08C5ABB1976CDD41ABEF3F919A75ACDFC44FC7C1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SAPTMLoadingPlan</string>
+		</dict>
+	</array>
+</dict>
+</plist>
