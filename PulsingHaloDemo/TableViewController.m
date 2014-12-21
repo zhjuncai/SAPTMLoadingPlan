@@ -73,7 +73,7 @@
 //    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 //    [self.navigationController.navigationBar setBackgroundColor:[UIColor blackColor]];
     
-    self.title = @"Beacons of Loading Cargos";
+    self.title = @"iBeacons of Loading Cargos";
     self.data=[NSMutableArray array];
 //    [self.data addObject:@{@"text": @"Stylized organs", @"icon": @"heart"}];
 //    [self.data addObject:@{@"text": @"Food pictures", @"icon": @"camera"}];
@@ -102,11 +102,11 @@
     [self.data removeAllObjects];
     for (OrderItem *item in self.freightOrder.foItems) {
         NSString *info_1,*info_2,*info_3,*info_4,*info_5;
-        info_1 = [NSString stringWithFormat:@"CargoName:%@",item.itemName];
-        info_2 = [NSString stringWithFormat:@"major:%@",item.major];
-        info_3 = [NSString stringWithFormat:@"minor:%@",item.minor];
-        info_4 = [NSString stringWithFormat:@"Accuracy:%@米",@"+100m"];
-        info_5 = [NSString stringWithFormat:@"proximity:%@",@"Unknown"];
+        info_1 = [NSString stringWithFormat:@"%@",item.itemName];
+        info_2 = [NSString stringWithFormat:@"%@",item.major];
+        info_3 = [NSString stringWithFormat:@"%@",item.minor];
+        info_4 = [NSString stringWithFormat:@"%@",@"> 100m"];
+        info_5 = [NSString stringWithFormat:@"%@",@"Unknown"];
         for (CLBeacon* beacon in sortedArray) {
             if ([item.major isEqualToString: [NSString stringWithFormat: @"%@",beacon.major]]&&[item.minor isEqualToString: [NSString stringWithFormat: @"%@",beacon.minor]]) {
                 //                NSString * info_1 = [NSString stringWithFormat:@"CargoName:%@",beacon.proximityUUID.UUIDString];
@@ -135,7 +135,7 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"iBeacon Cargos Information";
+    return @"Cargos Details";
 }
 
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
