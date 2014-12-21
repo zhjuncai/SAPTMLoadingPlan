@@ -51,6 +51,7 @@ NSArray *itemValues;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Freight Order Details";
 //    UIImage *bgImage=[UIImage imageNamed:@"DarkBlueStainlesssteel.jpg"];
     
     
@@ -65,7 +66,8 @@ NSArray *itemValues;
 
     CGPoint point=self.beaconView.center;
     
-    point.y=self.beaconView.superview.superview.frame.size.height-self.beaconView.superview.frame.size.height;
+    point.y=self.beaconView.superview.superview.frame.size.height-self.beaconView.superview.frame.size.height-10;
+    point.x=self.beaconView.superview.superview.frame.size.width/2;
     self.halo.position = point;
     
     [self.view.layer insertSublayer:self.halo below:self.beaconView.layer];
@@ -159,24 +161,32 @@ NSArray *itemValues;
     return 40.f;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40.f)];
-//    headerView.backgroundColor  = [UIColor groupTableViewBackgroundColor];
-    
-    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"orderheader.png"]]];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 320, 40.f)];
-    label.textColor = [UIColor grayColor];
-    
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     if (section == 0) {
-        label.text = @"Order Details Info";
+        return  @"Order Details Info";
     }else{
-        label.text = @"Items";
+        return  @"Items";
     }
-    
-    [headerView addSubview:label];
-    return headerView;
 }
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    
+//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40.f)];
+////    headerView.backgroundColor  = [UIColor groupTableViewBackgroundColor];
+//    
+//    [headerView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"orderheader.png"]]];
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 320, 40.f)];
+//    label.textColor = [UIColor grayColor];
+//    
+//    if (section == 0) {
+//        label.text = @"Order Details Info";
+//    }else{
+//        label.text = @"Items";
+//    }
+//    
+//    [headerView addSubview:label];
+//    return headerView;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
@@ -193,8 +203,8 @@ NSArray *itemValues;
     NSString *CellIdentifier = @"OrderDetailCellIdentifier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    UIImage *image = [UIImage imageNamed:@"orderitembg.png"];
-    [cell setBackgroundColor:[UIColor colorWithPatternImage:image]];
+//    UIImage *image = [UIImage imageNamed:@"orderitembg.png"];
+//    [cell setBackgroundColor:[UIColor colorWithPatternImage:image]];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier];

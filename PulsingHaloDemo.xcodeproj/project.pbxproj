@@ -334,10 +334,10 @@
 				ORGANIZATIONNAME = "Shuichi Tsutsumi";
 				TargetAttributes = {
 					8AC907101850659E00A74F2E = {
-						DevelopmentTeam = 2XMNB3L8C3;
+						DevelopmentTeam = D6Q686RD93;
 					};
 					8AC907311850659E00A74F2E = {
-						DevelopmentTeam = 2XMNB3L8C3;
+						DevelopmentTeam = D6Q686RD93;
 						TestTargetID = 8AC907101850659E00A74F2E;
 					};
 				};

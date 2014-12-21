@@ -61,18 +61,17 @@
 //    [self.navigationController.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
 //    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
 //    [self.view setBackgroundColor:[UIColor clearColor]];
-    UIGraphicsBeginImageContext(self.tableView.frame.size);
-    [[UIImage imageNamed:@"ibeacontablebg.png"] drawInRect:self.tableView.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+//    UIGraphicsBeginImageContext(self.tableView.frame.size);
+//    [[UIImage imageNamed:@"ibeacontablebg.png"] drawInRect:self.tableView.bounds];
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
     
     
-    [self.tableView setBackgroundColor:[UIColor colorWithPatternImage:image]];
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setBackgroundColor:[UIColor blackColor]];
+//    [self.tableView setBackgroundColor:[UIColor colorWithPatternImage:image]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+//    [self.navigationController.navigationBar setBackgroundColor:[UIColor blackColor]];
     
-    
-    [self setTitle:@"iBeacons"];
+    self.title = @"Beacons of Loading Cargos";
     self.data=[NSMutableArray array];
 //    [self.data addObject:@{@"text": @"Stylized organs", @"icon": @"heart"}];
 //    [self.data addObject:@{@"text": @"Food pictures", @"icon": @"camera"}];
@@ -133,23 +132,27 @@
     return 40.f;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40.f)];
-    UIGraphicsBeginImageContext(self.tableView.frame.size);
-    [[UIImage imageNamed:@"ibeaconcell.png"] drawInRect:self.tableView.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    [headerView setBackgroundColor:[UIColor colorWithPatternImage:image]];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 320, 40.f)];
-    label.textColor = [UIColor grayColor];
-    
-    label.text=@"iBeacon Information:";
-    
-    [headerView addSubview:label];
-    return headerView;
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"iBeacon Cargos Information";
 }
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 40.f)];
+//    UIGraphicsBeginImageContext(self.tableView.frame.size);
+//    [[UIImage imageNamed:@"ibeaconcell.png"] drawInRect:self.tableView.bounds];
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    [headerView setBackgroundColor:[UIColor colorWithPatternImage:image]];
+//    
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 320, 40.f)];
+//    label.textColor = [UIColor grayColor];
+//    
+//    label.text=@"iBeacon Information:";
+//    
+//    [headerView addSubview:label];
+//    return headerView;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -164,12 +167,12 @@
         cell = [[CargoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-    UIGraphicsBeginImageContext(self.tableView.frame.size);
-    [[UIImage imageNamed:@"ibeaconcell.png"] drawInRect:self.tableView.bounds];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    [cell setBackgroundColor:[UIColor colorWithPatternImage:image]];
-    
+//    UIGraphicsBeginImageContext(self.tableView.frame.size);
+//    [[UIImage imageNamed:@"ibeaconcell.png"] drawInRect:self.tableView.bounds];
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    [cell setBackgroundColor:[UIColor colorWithPatternImage:image]];
+//    
     
 //    UISwitch *switchview = [[UISwitch alloc] initWithFrame:CGRectZero];
 //    [switchview addTarget:self action:@selector(updateSwitchAtIndexPath:) forControlEvents:UIControlEventValueChanged];
@@ -200,7 +203,7 @@
     cell.cargoNameLabel.text=dict[@"cargoName"];
     
 //    cell.textLabel.text = dict[@"text"];
-    [cell setBackgroundColor:[UIColor clearColor]];
+//    [cell setBackgroundColor:[UIColor clearColor]];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
 //    [cell.imageView setImage:[UIImage imageNamed:dict[@"icon"]]];
 
@@ -289,7 +292,7 @@
         
         SKPSMTPMessage *testMsg = [[SKPSMTPMessage alloc] init];
         testMsg.fromEmail = @"martinhsuching@126.com";
-        testMsg.toEmail =@"shil@001.c3t.r3.sap-ag.de";
+        testMsg.toEmail =@"shil@001.c4b.r3.sap-ag.de";
         testMsg.relayHost = @"smtp.126.com";
         testMsg.requiresAuth = YES;
         testMsg.login = @"martinhsuching";
@@ -325,7 +328,7 @@
         [orderItem setSelected:@"selected"];
         SKPSMTPMessage *testMsg = [[SKPSMTPMessage alloc] init];
         testMsg.fromEmail = @"martinhsuching@126.com";
-        testMsg.toEmail =@"shil@001.c3t.r3.sap-ag.de";
+        testMsg.toEmail =@"shil@001.c4b.r3.sap-ag.de";
         testMsg.relayHost = @"smtp.126.com";
         testMsg.requiresAuth = YES;
         testMsg.login = @"martinhsuching";

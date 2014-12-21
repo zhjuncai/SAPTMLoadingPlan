@@ -126,7 +126,7 @@
     {
         [self sendExitLocalNotification];
     }else{
-        [self showAlertView:nil message:@"sorry，你离开了 iSS iBeacon region"];
+//        [self showAlertView:nil message:@"sorry，你离开了 iSS iBeacon region"];
     }
 }
 
@@ -142,20 +142,20 @@
 
 - (void)sendEnterLocalNotification
 {
-    UILocalNotification *notice = [[UILocalNotification alloc] init];
-    notice.alertBody = @"Hi，你已经进入 iSS iBeacon region，打开应用获取最新信息";
-    notice.alertAction = @"Open";
-    notice.soundName = UILocalNotificationDefaultSoundName;
-    [[UIApplication sharedApplication] scheduleLocalNotification:notice];
+//    UILocalNotification *notice = [[UILocalNotification alloc] init];
+//    notice.alertBody = @"Hi，你已经进入 iSS iBeacon region，打开应用获取最新信息";
+//    notice.alertAction = @"Open";
+//    notice.soundName = UILocalNotificationDefaultSoundName;
+//    [[UIApplication sharedApplication] scheduleLocalNotification:notice];
 }
 
 - (void)sendExitLocalNotification
 {
-    UILocalNotification *notice = [[UILocalNotification alloc] init];
-    notice.alertBody = @"Sorry，你也许离开了 iSS iBeacon region";
-    notice.alertAction = @"Open";
-    notice.soundName = UILocalNotificationDefaultSoundName;
-    [[UIApplication sharedApplication] scheduleLocalNotification:notice];
+//    UILocalNotification *notice = [[UILocalNotification alloc] init];
+//    notice.alertBody = @"Sorry，你也许离开了 iSS iBeacon region";
+//    notice.alertAction = @"Open";
+//    notice.soundName = UILocalNotificationDefaultSoundName;
+//    [[UIApplication sharedApplication] scheduleLocalNotification:notice];
 }
 
 #pragma mark - Beacon ranging delegate methods
