@@ -30,6 +30,8 @@
 {
     [super viewDidLoad];
     
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    
     // check to see if Location Services is enabled, there are two state possibilities:
     // 1) disabled for entire device, 2) disabled just for this app
     //
