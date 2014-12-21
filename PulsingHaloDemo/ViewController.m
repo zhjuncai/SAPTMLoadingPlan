@@ -60,8 +60,14 @@ NSArray *itemValues;
 //    [self.footView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"leatherbg.png"]]];
 //    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
 //    self.viewbg.backgroundColor=[UIColor colorWithPatternImage:bgImage];
+    
     self.halo = [PulsingHaloLayer layer];
-    self.halo.position = self.beaconView.center;
+
+    CGPoint point=self.beaconView.center;
+    
+    point.y=self.beaconView.superview.superview.frame.size.height-self.beaconView.superview.frame.size.height;
+    self.halo.position = point;
+    
     [self.view.layer insertSublayer:self.halo below:self.beaconView.layer];
     [self setupInitialValues];
     

@@ -99,21 +99,23 @@
     
     NSArray* proximityToString = @[@"Unknown", @"Immediate", @"Near", @"Far"];
     [self.data removeAllObjects];
-    for (CLBeacon* beacon in sortedArray) {
-        for (OrderItem *item in self.freightOrder.foItems) {
+    for (OrderItem *item in self.freightOrder.foItems) {
+        NSString *info_1,*info_2,*info_3,*info_4,*info_5;
+        info_1 = [NSString stringWithFormat:@"CargoName:%@",item.itemName];
+        info_2 = [NSString stringWithFormat:@"major:%@",item.major];
+        info_3 = [NSString stringWithFormat:@"minor:%@",item.minor];
+        info_4 = [NSString stringWithFormat:@"Accuracy:%@米",@"+100m"];
+        info_5 = [NSString stringWithFormat:@"proximity:%@",@"Unknown"];
+        for (CLBeacon* beacon in sortedArray) {
             if ([item.major isEqualToString: [NSString stringWithFormat: @"%@",beacon.major]]&&[item.minor isEqualToString: [NSString stringWithFormat: @"%@",beacon.minor]]) {
-//                NSString * info_1 = [NSString stringWithFormat:@"CargoName:%@",beacon.proximityUUID.UUIDString];
-                NSString * info_1 = [NSString stringWithFormat:@"CargoName:%@",item.itemName];
-                NSString * info_2 = [NSString stringWithFormat:@"major:%@",beacon.major];
-                NSString * info_3 = [NSString stringWithFormat:@"minor:%@",beacon.minor];
+                //                NSString * info_1 = [NSString stringWithFormat:@"CargoName:%@",beacon.proximityUUID.UUIDString];
                 
-                NSString * info_4 = [NSString stringWithFormat:@"Accuracy:%0.4f米,Distance:%@",beacon.accuracy,proximityToString[beacon.proximity]];
-                NSString * info_5 = [NSString stringWithFormat:@"proximity:%@",proximityToString[beacon.proximity]];
+                info_4 = [NSString stringWithFormat:@"Accuracy:%0.4f米",beacon.accuracy];
+                info_5 = [NSString stringWithFormat:@"proximity:%@",proximityToString[beacon.proximity]];
                 //        NSString * info_6 = [NSString stringWithFormat:@"rssi:%ld",(long)beacon.rssi];
-                [self.data addObject:@{@"cargoName": info_1,@"icon": @"camera",@"major": info_2,@"minor": info_3,@"distance": info_4,@"status": info_5,@"selected":item}];
             }
         }
-
+        [self.data addObject:@{@"cargoName": info_1,@"icon": @"camera",@"major": info_2,@"minor": info_3,@"distance": info_4,@"status": info_5,@"selected":item}];
     }
     
     [self.tableView reloadData];

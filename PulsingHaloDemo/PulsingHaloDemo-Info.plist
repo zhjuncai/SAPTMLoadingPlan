@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Need enable location service to provide better service</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Need enable location service to provide better service</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Location Service is required</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -44,6 +38,12 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location Service is required</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Need enable location service to provide better service</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Need enable location service to provide better service</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>
