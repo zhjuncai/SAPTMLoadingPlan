@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8AC907101850659E00A74F2E"
-               BuildableName = "PulsingHaloDemo.app"
-               BlueprintName = "PulsingHaloDemo"
-               ReferencedContainer = "container:PulsingHaloDemo.xcodeproj">
+               BuildableName = "LoadingPlan.app"
+               BlueprintName = "LoadingPlan"
+               ReferencedContainer = "container:LoadingPlan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8AC907311850659E00A74F2E"
-               BuildableName = "PulsingHaloDemoTests.xctest"
-               BlueprintName = "PulsingHaloDemoTests"
-               ReferencedContainer = "container:PulsingHaloDemo.xcodeproj">
+               BuildableName = "LoadingPlanTests.xctest"
+               BlueprintName = "LoadingPlanTests"
+               ReferencedContainer = "container:LoadingPlan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8AC907311850659E00A74F2E"
-               BuildableName = "PulsingHaloDemoTests.xctest"
-               BlueprintName = "PulsingHaloDemoTests"
-               ReferencedContainer = "container:PulsingHaloDemo.xcodeproj">
+               BuildableName = "LoadingPlanTests.xctest"
+               BlueprintName = "LoadingPlanTests"
+               ReferencedContainer = "container:LoadingPlan.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8AC907101850659E00A74F2E"
-            BuildableName = "PulsingHaloDemo.app"
-            BlueprintName = "PulsingHaloDemo"
-            ReferencedContainer = "container:PulsingHaloDemo.xcodeproj">
+            BuildableName = "LoadingPlan.app"
+            BlueprintName = "LoadingPlan"
+            ReferencedContainer = "container:LoadingPlan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8AC907101850659E00A74F2E"
-            BuildableName = "PulsingHaloDemo.app"
-            BlueprintName = "PulsingHaloDemo"
-            ReferencedContainer = "container:PulsingHaloDemo.xcodeproj">
+            BuildableName = "LoadingPlan.app"
+            BlueprintName = "LoadingPlan"
+            ReferencedContainer = "container:LoadingPlan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8AC907101850659E00A74F2E"
-            BuildableName = "PulsingHaloDemo.app"
-            BlueprintName = "PulsingHaloDemo"
-            ReferencedContainer = "container:PulsingHaloDemo.xcodeproj">
+            BuildableName = "LoadingPlan.app"
+            BlueprintName = "LoadingPlan"
+            ReferencedContainer = "container:LoadingPlan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -31,6 +31,8 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     // check to see if Location Services is enabled, there are two state possibilities:
     // 1) disabled for entire device, 2) disabled just for this app
@@ -74,14 +76,13 @@
 //    [self.navigationController.navigationBar setBackgroundColor:[UIColor blackColor]];
     
     self.title = @"iBeacons of Loading Cargos";
-    self.data=[NSMutableArray array];
+    self.data=[[NSMutableArray alloc] initWithCapacity:[self.freightOrder.foItems count]];
 //    [self.data addObject:@{@"text": @"Stylized organs", @"icon": @"heart"}];
 //    [self.data addObject:@{@"text": @"Food pictures", @"icon": @"camera"}];
 //    [self.data addObject:@{@"text": @"Straight line maker", @"icon": @"pencil"}];
 //    [self.data addObject:@{@"text": @"Let's cook!", @"icon": @"beaker"}];
 //    [self.data addObject:@{@"text": @"That's the puzzle!", @"icon": @"puzzle"}];
 //    [self.data addObject:@{@"text": @"Cheers", @"icon": @"glass"}];
-    
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleMessage:) name:@"iBeaconsBack" object:nil];
 }
@@ -111,8 +112,8 @@
             if ([item.major isEqualToString: [NSString stringWithFormat: @"%@",beacon.major]]&&[item.minor isEqualToString: [NSString stringWithFormat: @"%@",beacon.minor]]) {
                 //                NSString * info_1 = [NSString stringWithFormat:@"CargoName:%@",beacon.proximityUUID.UUIDString];
                 
-                info_4 = [NSString stringWithFormat:@"Accuracy:%0.4f米",beacon.accuracy];
-                info_5 = [NSString stringWithFormat:@"proximity:%@",proximityToString[beacon.proximity]];
+                info_4 = [NSString stringWithFormat:@"%0.4f M",beacon.accuracy];
+                info_5 = [NSString stringWithFormat:@"%@",proximityToString[beacon.proximity]];
                 //        NSString * info_6 = [NSString stringWithFormat:@"rssi:%ld",(long)beacon.rssi];
             }
         }
@@ -199,7 +200,9 @@
     
     
     cell.distanceLabel.text=dict[@"distance"];
+    cell.distanceLabel.textColor = [UIColor blueColor];
     cell.statusLabel.text=dict[@"status"];
+    
     cell.majorLabel.text=dict[@"major"];
     cell.minorLabel.text=dict[@"minor"];
     cell.cargoNameLabel.text=dict[@"cargoName"];

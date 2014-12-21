@@ -36,24 +36,11 @@
 		8AC907251850659E00A74F2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC907241850659E00A74F2E /* AppDelegate.m */; };
 		8AC907281850659E00A74F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC907261850659E00A74F2E /* Main.storyboard */; };
 		8AC9072B1850659E00A74F2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9072A1850659E00A74F2E /* ViewController.m */; };
-		8AC907341850659E00A74F2E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC907331850659E00A74F2E /* XCTest.framework */; };
-		8AC907351850659E00A74F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC907141850659E00A74F2E /* Foundation.framework */; };
-		8AC907361850659E00A74F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC907181850659E00A74F2E /* UIKit.framework */; };
-		8AC9073E1850659E00A74F2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9073C1850659E00A74F2E /* InfoPlist.strings */; };
-		8AC907401850659E00A74F2E /* PulsingHaloDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9073F1850659E00A74F2E /* PulsingHaloDemoTests.m */; };
 		8AC9074C185065DB00A74F2E /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9074B185065DB00A74F2E /* PulsingHaloLayer.m */; };
 		AAD3E6231A46ABCF00D9B00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD3E6221A46ABCF00D9B00E /* Images.xcassets */; };
+		AAD3E6261A46E9BD00D9B00E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD3E6241A46E9BD00D9B00E /* InfoPlist.strings */; };
+		AAD3E6271A46E9BD00D9B00E /* LoadingPlanTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAD3E6251A46E9BD00D9B00E /* LoadingPlanTests-Info.plist */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8AC907371850659E00A74F2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AC907091850659E00A74F2E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8AC907101850659E00A74F2E;
-			remoteInfo = PulsingHaloDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		071F66711A3DAEFD00C72F97 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
@@ -93,27 +80,26 @@
 		0E3EEFA71A42DD7C00AB67F0 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		0E939CB71A43FF9F0082B56B /* CargoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CargoTableViewCell.h; sourceTree = "<group>"; };
 		0E939CB81A43FF9F0082B56B /* CargoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CargoTableViewCell.m; sourceTree = "<group>"; };
-		8AC907111850659E00A74F2E /* PulsingHaloDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulsingHaloDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC907111850659E00A74F2E /* LoadingPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC907141850659E00A74F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8AC907161850659E00A74F2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8AC907181850659E00A74F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8AC9071C1850659E00A74F2E /* PulsingHaloDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PulsingHaloDemo-Info.plist"; sourceTree = "<group>"; };
+		8AC9071C1850659E00A74F2E /* LoadingPlan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoadingPlan-Info.plist"; sourceTree = "<group>"; };
 		8AC9071E1850659E00A74F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8AC907201850659E00A74F2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8AC907221850659E00A74F2E /* PulsingHaloDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PulsingHaloDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8AC907221850659E00A74F2E /* LoadingPlan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadingPlan-Prefix.pch"; sourceTree = "<group>"; };
 		8AC907231850659E00A74F2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AC907241850659E00A74F2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8AC907271850659E00A74F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 		8AC907291850659E00A74F2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8AC9072A1850659E00A74F2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8AC907321850659E00A74F2E /* PulsingHaloDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulsingHaloDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC907331850659E00A74F2E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8AC9073B1850659E00A74F2E /* PulsingHaloDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PulsingHaloDemoTests-Info.plist"; sourceTree = "<group>"; };
-		8AC9073D1850659E00A74F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8AC9073F1850659E00A74F2E /* PulsingHaloDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloDemoTests.m; sourceTree = "<group>"; };
 		8AC9074A185065DB00A74F2E /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
 		8AC9074B185065DB00A74F2E /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		AAD3E6221A46ABCF00D9B00E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAD3E6241A46E9BD00D9B00E /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AAD3E6251A46E9BD00D9B00E /* LoadingPlanTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LoadingPlanTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,16 +112,6 @@
 				8AC907171850659E00A74F2E /* CoreGraphics.framework in Frameworks */,
 				8AC907191850659E00A74F2E /* UIKit.framework in Frameworks */,
 				8AC907151850659E00A74F2E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AC9072F1850659E00A74F2E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AC907341850659E00A74F2E /* XCTest.framework in Frameworks */,
-				8AC907361850659E00A74F2E /* UIKit.framework in Frameworks */,
-				8AC907351850659E00A74F2E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +175,7 @@
 		8AC907121850659E00A74F2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8AC907111850659E00A74F2E /* PulsingHaloDemo.app */,
-				8AC907321850659E00A74F2E /* PulsingHaloDemoTests.xctest */,
+				8AC907111850659E00A74F2E /* LoadingPlan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,10 +226,10 @@
 		8AC9071B1850659E00A74F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8AC9071C1850659E00A74F2E /* PulsingHaloDemo-Info.plist */,
+				8AC9071C1850659E00A74F2E /* LoadingPlan-Info.plist */,
 				8AC9071D1850659E00A74F2E /* InfoPlist.strings */,
 				8AC907201850659E00A74F2E /* main.m */,
-				8AC907221850659E00A74F2E /* PulsingHaloDemo-Prefix.pch */,
+				8AC907221850659E00A74F2E /* LoadingPlan-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,6 +237,8 @@
 		8AC907391850659E00A74F2E /* PulsingHaloDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				AAD3E6241A46E9BD00D9B00E /* InfoPlist.strings */,
+				AAD3E6251A46E9BD00D9B00E /* LoadingPlanTests-Info.plist */,
 				8AC9073F1850659E00A74F2E /* PulsingHaloDemoTests.m */,
 				8AC9073A1850659E00A74F2E /* Supporting Files */,
 			);
@@ -271,8 +248,6 @@
 		8AC9073A1850659E00A74F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8AC9073B1850659E00A74F2E /* PulsingHaloDemoTests-Info.plist */,
-				8AC9073C1850659E00A74F2E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -289,9 +264,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8AC907101850659E00A74F2E /* PulsingHaloDemo */ = {
+		8AC907101850659E00A74F2E /* LoadingPlan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8AC907431850659E00A74F2E /* Build configuration list for PBXNativeTarget "PulsingHaloDemo" */;
+			buildConfigurationList = 8AC907431850659E00A74F2E /* Build configuration list for PBXNativeTarget "LoadingPlan" */;
 			buildPhases = (
 				8AC9070D1850659E00A74F2E /* Sources */,
 				8AC9070E1850659E00A74F2E /* Frameworks */,
@@ -301,28 +276,10 @@
 			);
 			dependencies = (
 			);
-			name = PulsingHaloDemo;
+			name = LoadingPlan;
 			productName = PulsingHaloDemo;
-			productReference = 8AC907111850659E00A74F2E /* PulsingHaloDemo.app */;
+			productReference = 8AC907111850659E00A74F2E /* LoadingPlan.app */;
 			productType = "com.apple.product-type.application";
-		};
-		8AC907311850659E00A74F2E /* PulsingHaloDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8AC907461850659E00A74F2E /* Build configuration list for PBXNativeTarget "PulsingHaloDemoTests" */;
-			buildPhases = (
-				8AC9072E1850659E00A74F2E /* Sources */,
-				8AC9072F1850659E00A74F2E /* Frameworks */,
-				8AC907301850659E00A74F2E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8AC907381850659E00A74F2E /* PBXTargetDependency */,
-			);
-			name = PulsingHaloDemoTests;
-			productName = PulsingHaloDemoTests;
-			productReference = 8AC907321850659E00A74F2E /* PulsingHaloDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -336,13 +293,9 @@
 					8AC907101850659E00A74F2E = {
 						DevelopmentTeam = D6Q686RD93;
 					};
-					8AC907311850659E00A74F2E = {
-						DevelopmentTeam = D6Q686RD93;
-						TestTargetID = 8AC907101850659E00A74F2E;
-					};
 				};
 			};
-			buildConfigurationList = 8AC9070C1850659E00A74F2E /* Build configuration list for PBXProject "PulsingHaloDemo" */;
+			buildConfigurationList = 8AC9070C1850659E00A74F2E /* Build configuration list for PBXProject "LoadingPlan" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -355,8 +308,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8AC907101850659E00A74F2E /* PulsingHaloDemo */,
-				8AC907311850659E00A74F2E /* PulsingHaloDemoTests */,
+				8AC907101850659E00A74F2E /* LoadingPlan */,
 			);
 		};
 /* End PBXProject section */
@@ -367,19 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC9071F1850659E00A74F2E /* InfoPlist.strings in Resources */,
+				AAD3E6261A46E9BD00D9B00E /* InfoPlist.strings in Resources */,
+				AAD3E6271A46E9BD00D9B00E /* LoadingPlanTests-Info.plist in Resources */,
 				0E224BC01A429E9600E1B272 /* beep.mp3 in Resources */,
 				0E224BC21A429E9600E1B272 /* FreightOrders.json in Resources */,
 				AAD3E6231A46ABCF00D9B00E /* Images.xcassets in Resources */,
 				0E3EEFA81A42DD7C00AB67F0 /* Launch Screen.xib in Resources */,
 				8AC907281850659E00A74F2E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AC907301850659E00A74F2E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AC9073E1850659E00A74F2E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,23 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AC9072E1850659E00A74F2E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AC907401850659E00A74F2E /* PulsingHaloDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8AC907381850659E00A74F2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8AC907101850659E00A74F2E /* PulsingHaloDemo */;
-			targetProxy = 8AC907371850659E00A74F2E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8AC9071D1850659E00A74F2E /* InfoPlist.strings */ = {
@@ -446,14 +376,6 @@
 				8AC907271850659E00A74F2E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8AC9073C1850659E00A74F2E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AC9073D1850659E00A74F2E /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -539,10 +461,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PulsingHaloDemo/PulsingHaloDemo-Prefix.pch";
-				INFOPLIST_FILE = "PulsingHaloDemo/PulsingHaloDemo-Info.plist";
+				GCC_PREFIX_HEADER = "PulsingHaloDemo/LoadingPlan-Prefix.pch";
+				INFOPLIST_FILE = "PulsingHaloDemo/LoadingPlan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LoadingPlan;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -557,60 +479,20 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PulsingHaloDemo/PulsingHaloDemo-Prefix.pch";
-				INFOPLIST_FILE = "PulsingHaloDemo/PulsingHaloDemo-Info.plist";
+				GCC_PREFIX_HEADER = "PulsingHaloDemo/LoadingPlan-Prefix.pch";
+				INFOPLIST_FILE = "PulsingHaloDemo/LoadingPlan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LoadingPlan;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		8AC907471850659E00A74F2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PulsingHaloDemo.app/PulsingHaloDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PulsingHaloDemo/PulsingHaloDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PulsingHaloDemoTests/PulsingHaloDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		8AC907481850659E00A74F2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PulsingHaloDemo.app/PulsingHaloDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PulsingHaloDemo/PulsingHaloDemo-Prefix.pch";
-				INFOPLIST_FILE = "PulsingHaloDemoTests/PulsingHaloDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8AC9070C1850659E00A74F2E /* Build configuration list for PBXProject "PulsingHaloDemo" */ = {
+		8AC9070C1850659E00A74F2E /* Build configuration list for PBXProject "LoadingPlan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8AC907411850659E00A74F2E /* Debug */,
@@ -619,20 +501,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8AC907431850659E00A74F2E /* Build configuration list for PBXNativeTarget "PulsingHaloDemo" */ = {
+		8AC907431850659E00A74F2E /* Build configuration list for PBXNativeTarget "LoadingPlan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8AC907441850659E00A74F2E /* Debug */,
 				8AC907451850659E00A74F2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8AC907461850659E00A74F2E /* Build configuration list for PBXNativeTarget "PulsingHaloDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8AC907471850659E00A74F2E /* Debug */,
-				8AC907481850659E00A74F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
